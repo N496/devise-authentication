@@ -20,7 +20,8 @@ gem 'puma', '~> 3.11'
 # gem 'mini_magick', '~> 4.8'
 
 gem 'devise'
-
+gem 'pry'
+gem 'googlebooks', '~> 0.0.9'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -4,6 +4,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :auth_tokens, dependent: :destroy
+  has_many :books, dependent: :destroy
 
   ## Generate Auth token when user login
   def generate_auth_token

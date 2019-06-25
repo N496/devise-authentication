@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  authors: MyString
+  cover: MyString
+  goodreadsId: MyString
+  pages: 1
+  preview_book: MyString
+  user: one
+
+two:
+  title: MyString
+  authors: MyString
+  cover: MyString
+  goodreadsId: MyString
+  pages: 1
+  preview_book: MyString
+  user: two
