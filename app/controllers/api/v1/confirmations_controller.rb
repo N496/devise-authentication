@@ -9,14 +9,7 @@ class Api::V1::ConfirmationsController < ApiController
         user.confirmation_token = nil
         user.confirmation_sent_at = nil
         user.save(validate: false)
-        token = user.generate_auth_token
-        render json: {
-          auth_token: token,
-          success: true,
-          isConfirmed: true,
-          user: { id: "#{user.id}" , email: "#{user.email}" } ,
-          message: "Your account is confirmed successfully."
-        }, status: 201
+        success_response_without_option(user, 'Your account is confirmed successfully.')
       else
         unauthorize_http_response('Confirmation Token is invalid.')
       end
